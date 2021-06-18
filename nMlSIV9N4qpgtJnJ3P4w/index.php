@@ -15,7 +15,7 @@ if (!empty($_SESSION['active'])) {
       require_once "sesion.php";
       $user = mysqli_real_escape_string($conexion, $_POST['usuario']);
       $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));
-      $query = mysqli_query($conexion, "SELECT u.usuario_id idusuario, u.usuario_nombre nombre, u.usuario_curp correo, u.usuario_usuario usuario, r.rol_id, r.rol_rol FROM usuario u INNER JOIN rol r ON u.usuario_rolnombre = r.rol_id WHERE u.usuario_usuario = '$user' AND u.usuario_clave = '$clave'");
+      $query = mysqli_query($conexion, "SELECT u.usuario_id idusuario, u.usuario_nombre nombre, u.usuario_curp curp, u.usuario_usuario usuario, r.rol_id idrol, r.rol_rol rol FROM usuario u INNER JOIN rol r ON u.usuario_rolnombre = r.rol_id WHERE u.usuario_usuario = '$user' AND u.usuario_clave = '$clave'");
     //  $query = mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo,u.usuario,r.idrol,r.rol FROM usuario u INNER JOIN rol r ON u.rol = r.idrol WHERE u.usuario = '$user' AND u.clave = '$clave'");
       mysqli_close($conexion);
       $resultado = mysqli_num_rows($query);
@@ -24,7 +24,7 @@ if (!empty($_SESSION['active'])) {
         $_SESSION['active'] = true;
         $_SESSION['idUser'] = $dato['idusuario'];
         $_SESSION['nombre'] = $dato['nombre'];
-        $_SESSION['email'] = $dato['correo'];
+        $_SESSION['curp'] = $dato['curp'];
         $_SESSION['user'] = $dato['usuario'];
         $_SESSION['rol'] = $dato['idrol'];
         $_SESSION['rol_name'] = $dato['rol'];

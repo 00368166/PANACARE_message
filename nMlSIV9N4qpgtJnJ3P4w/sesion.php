@@ -1,9 +1,9 @@
 <?php
 
-    $host = "109.106.251.81";
-    $user = "panacare_developer";
-    $clave = "M4nu313du4rd0";
-    $bd = "panacare_sys";
+    $host = "localhost:3308";
+    $user = "root";
+    $clave = "";
+    $bd = "panacea_1";
 
     $conexion = mysqli_connect($host,$user,$clave,$bd);
     if (mysqli_connect_errno()){

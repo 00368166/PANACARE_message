@@ -50,8 +50,8 @@ mysqli_close($conexion);
 
       <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <h1 class="hometitle" data-wow-delay="0.6s">PANACARE</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Descripcion rapida de que es panacare. Espacio de marketing. <a rel="nofollow" href="">Enlace de facebook</a>. Gracias.</p>
-        <a href="https://wa.me/529511876322" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Acerca de nosotros</a>
+        <p class="wow fadeInUp" data-wow-delay="0.9s">Descripcion rapida de que es panacare. Espacio de marketing. <a rel="nofollow" href="#gallery">Enlace de facebook</a>. Gracias.</p>
+        <a href="https://www.panacare.com.mx/#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Acerca de nosotros</a>
       </div>
 
     </div>
@@ -74,17 +74,17 @@ mysqli_close($conexion);
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
           <h1>Mision</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
+          <pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
 
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</p>
+Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
 <h1>Vision</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
+<pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
 
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</p>
+Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
 <h1>Filosofía</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
+<pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
 
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</p>
+Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
 
         </div>
       </div>
@@ -106,14 +106,16 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
       <!-- team carousel -->
       <div id="team-carousel" class="owl-carousel">
-
       <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
         <div class="team-thumb">
           <div class="image-holder">
-            <img src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
+            <img  src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
           </div>
-          <h2 class="heading">Mary, CEO</h2>
-          <p class="description">Aliquam ac justo est. Praesent feugiat cursus est.</p>
+          <h2 class="heading">Integrante 1</h2>
+          <p class="description">Aliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus est.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -122,8 +124,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
           </div>
-          <h2 class="heading">Jack, Founder</h2>
+          <h2 class="heading">Integrante 2</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -132,8 +137,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
           </div>
-          <h2 class="heading">Linda, Manager</h2>
+          <h2 class="heading">Integrante 3</h2>
           <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -142,8 +150,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
           </div>
-          <h2 class="heading">Sandy, Director</h2>
+          <h2 class="heading">Integrante 4</h2>
           <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -152,8 +163,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
           </div>
-          <h2 class="heading">Lukia, Fashion</h2>
+          <h2 class="heading">Integrante 5</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -162,8 +176,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
           </div>
-          <h2 class="heading">George, Admin</h2>
+          <h2 class="heading">Integrante 6</h2>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -172,8 +189,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
           </div>
-          <h2 class="heading">Day, Accountant</h2>
+          <h2 class="heading">Integrante 7</h2>
           <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 
@@ -182,8 +202,11 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <div class="image-holder">
             <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
           </div>
-          <h2 class="heading">Lynn, Marketing</h2>
+          <h2 class="heading">Integrante 8</h2>
           <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+          <div class="cc">
+            <a href="/" align="right" class="description">Leer mas</a>
+          </div>
         </div>
       </div>
 

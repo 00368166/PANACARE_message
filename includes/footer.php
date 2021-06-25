@@ -17,7 +17,7 @@
                     <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="1.6s"></a></li>
                 </ul>
 
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2021 PANACEA |
+				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2021 PANACARE |
                 Contacto desarrollo <a href="https://wa.me/529511876322" title="Contacto de desarrollo web" target="_blank">31m4nu</a></p>
 
 			</div>
@@ -25,6 +25,9 @@
 		</div>
 
 	</div>
+
+<?php include_once "includes/bot.php"; ?>
+
 </footer>
 
 <!-- Back top -->

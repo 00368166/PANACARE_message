@@ -1362,8 +1362,7 @@ button,input,select,textarea
 {
 font-family:inherit;
 font-size:inherit;
-line-height:inherit;
-margin-top: 18px;
+line-height:inherit
 }
 a
 {

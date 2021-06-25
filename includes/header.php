@@ -56,7 +56,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
           <span class="icon icon-bar"></span>
           <span class="icon icon-bar"></span>
         </button>
-      <a href="#top" class="empresa">PANACARE</a>
+      <a href="https://www.panacare.com.mx" class="empresa">PANACARE</a>
       </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">

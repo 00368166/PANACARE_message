@@ -264,7 +264,8 @@ content:"\f00c"
 }
 .fa-remove:before,.fa-close:before,.fa-times:before
 {
-content:"\f00d"
+content:"\f00d";
+color: red;
 }
 .fa-search-plus:before
 {

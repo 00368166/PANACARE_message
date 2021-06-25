@@ -55,6 +55,18 @@ s
 	color: #fff;
 }
 
+.cc {
+	margin: 0 auto;
+	margin-top: 20px;
+	}
+
+.cc a {
+	text-align: center;
+	padding: 8px 12px;
+	border-radius: 15px;
+	background: #8ED4E5;
+	color: #fff;
+}
 /* Caption Style 4 */
 .cs-style-4 li {
 	-webkit-perspective: 1700px;

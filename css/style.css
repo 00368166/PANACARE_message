@@ -4,7 +4,45 @@ Snapshot Template
 http://www.templatemo.com/tm-493-snapshot
 
 */
+.contenedor {
+    margin: 2rem auto;
+    border: 1px solid #aaa;
+    height: 300px;
+    width:90%;
+    max-width: 400px;
+    background: #f1f2f3;
+    overflow:auto;
+    box-sizing: border-box;
+    padding:0 1rem;
+}
 
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+::-webkit-scrollbar-button:increment,::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
 
 /* Body
 ------------------------------------- */
@@ -62,15 +100,36 @@ p {
   letter-spacing: 1px;
   line-height: 34px;
 }
+pp {
+  color: #888;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  text-align: justify;
+}
+
+pq {
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 34px;
+  text-align: center;
+
+}
 
 #home p,
 #contact p, footer p {
   color: #f9f9f9;
 }
 
+#home pq,
+#contact pq, footer pq {
+  color: #f9f9f9;
+}
+
 .btn {
   border:none;
-  border-radius: 4px;
+  border-radius: 15px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -374,33 +433,34 @@ a:hover, a:active, a:focus {
 
 #about .about-thumb {
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 50px;
   padding: 100px;
   position: relative;
+ text-align: justify;
 }
 
 #about .about-img img {
   border: 8px solid #ffffff;
   position: absolute;
   left: -120px;
-  bottom: -325px;
+  bottom: -335px;
   padding: 12px;
 }
 
 #about .team-thumb {
   width: 100%;
-  height: 400px;
+  height: 350px;
   margin: 32px 0;
   text-align: center;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 #about .team-thumb .image-holder {
   position: relative;
-  top: 40px;
+  top: 15px;
   display: inline-block;
   margin-bottom: 40px;
   padding: 10px;
@@ -411,27 +471,28 @@ a:hover, a:active, a:focus {
 #about .team-thumb .heading {
   font-weight: bold;
   position: relative;
-  top: 10px;
+  top: -25px;
   -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 #about .team-thumb:hover {
-  background: #1E2022;
+  background: #304352;
+  height: 600px;
 }
 
 #about .team-thumb:hover .image-holder {
-  top: -40px;
+  top: -42px;
   margin-bottom: 0px;
 }
 
 #about .team-thumb:hover .heading {
-  top: -10px;
+  top: -42px;
 }
 
 #about .team-thumb .description {
   font-size: 18px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   opacity: 0;
   -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -446,6 +507,8 @@ a:hover, a:active, a:focus {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  text-align: justify;
+  margin-top: -42px;
 }
 
 #about .team-thumb:hover p.description {
@@ -594,7 +657,7 @@ footer {
   background-color: #ffffff;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
   transition : all 1s ease;
-  bottom: 2em;
+  bottom: 4em;
   right: 2em;
   color: #222;
   font-size: 26px;

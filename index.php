@@ -50,7 +50,7 @@ mysqli_close($conexion);
 
       <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <h1 class="hometitle" data-wow-delay="0.6s">PANACARE</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Descripcion rapida de que es panacare. Espacio de marketing. <a rel="nofollow" href="#gallery">Enlace de facebook</a>. Gracias.</p>
+        <p class="wow fadeInUp" data-wow-delay="0.9s">Somos  una agencia de enfermería comprometida con ofrecer el mejor servicio de cuidado en los momentos más apremiantes ofreciéndote una abanico de personal capacitado que se adapta a tus necesidades.</p>
         <a href="https://www.panacare.com.mx/#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Acerca de nosotros</a>
       </div>
 
@@ -73,15 +73,11 @@ mysqli_close($conexion);
 
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
-          <h1>Mision</h1>
+          <h1><b>Mision</b></h1>
           <pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
 
 Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
-<h1>Vision</h1>
-<pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
-
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
-<h1>Filosofía</h1>
+<h1><b>Vision</b></h1>
 <pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
 
 Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
@@ -269,7 +265,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <figure>
             <div><img src="images/equi.jpg" alt="image 4"></div>
 						<figcaption>
-              <h2>Renta de equipo</h2>
+              <h2>Equipamiento hospitalario</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
               <a href="#">Detalles</a>
             </figcaption>
@@ -292,7 +288,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
         <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
           <h1>Mandanos un mensaje</h1>
-          <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <p>Para contratar un servicio o formar parte de nuestro equipo</p>
         </div>
 
 <form method="post"  class="wow fadeInUp" data-wow-delay="0.8s" onsubmit="window.location.href = './#contact';">
@@ -315,7 +311,9 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
 
       </div>
-
+    </div>
+    <div class="col-md-offset-3  col-sm-6">
+      <h1><a href="tel:9511876322" class="fa fa-phone wow fadeInUp" data-wow-delay="1.1s"> Llamanos ahora</a></h1>
     </div>
   </div>
 </section>

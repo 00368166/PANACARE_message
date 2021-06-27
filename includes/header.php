@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
   <link rel="icon" type="images/png" href="images/aa.png" />
-
+	<meta name="description" content="Agencia de enfermería y equipamiento hospitalario comprometida con ofrecer el mejor servicio de cuidado en los momentos más apremiantes ofreciéndote una abanico de personal capacitado y equipamiento hospitalario adaptado a tus necesidades."/>
+	<meta name="keywords" content="panacare,enfermeria,cuidados,equipo medico,equipamiento hospitalario,camillas,enfermería,enfermeras"/>
+	<link rel="canonical" href="https://www.panacare.com.mx/" />
 	<title>PANACARE</title>
 <!--
 Snapshot Template
@@ -33,7 +35,16 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 	<!-- Google web font  -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-200525796-1">
+	</script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
+	  gtag('config', 'UA-200525796-1');
+	</script>
 </head>
 <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
 

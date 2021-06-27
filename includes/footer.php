@@ -1,9 +1,13 @@
+
+
 <!-- Footer section -->
 <footer>
 	<div class="container">
 		<div class="col-md-offset-1 col-md-10 col-sm-12">
 			<div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="1.0s">
+<h1>ó</h1>
 				<h1>contactanos en cualquiera de nuestras redes sociales.</h1>
+			
 			</div>
 		</div>
 

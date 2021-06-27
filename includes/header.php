@@ -56,7 +56,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 </div>
 
 
-<!-- Navigation section  -->ss
+<!-- Navigation section  -->
 
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">

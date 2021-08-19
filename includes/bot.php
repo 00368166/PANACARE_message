@@ -8,4 +8,7 @@
 <!--  JS bot  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/bots.js"></script>
+<script src="assets/js/srcbot.js"></script>
+
 <!--  /JS bot  -->

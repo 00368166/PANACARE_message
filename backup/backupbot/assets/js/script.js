@@ -68,8 +68,8 @@ $(document).ready(function() {
 			} else {
 				$("#chat-input").blur();
 
-				setUserResponse(text);
 				text = cleanCadena(text);
+				setUserResponse(text);
 				setResponse(text);
 				//setBotResponse(text);
 				e.preventDefault();
@@ -132,11 +132,23 @@ $(document).ready(function() {
 
 function setResponse(val){
 	console.log(val);
-var r = Bots.sendMessage("panacarebot", val, { "USER": "PANACARE" });
-	console.log(r);
-	var result = r.toString();
-//		result = cleanCadena(result);
-setBotResponse(result);
+	$.ajax({
+		url: 'assets/script/message.php',
+		//url: 'chatbot/chatbot/message.php',
+		type: 'POST',
+		data: 'text='+val,
+		success: function(result){
+			console.log(result);
+			result = cleanCadena(result);
+			setBotResponse(result);
+		/*
+ 			$replay = '<div class="bot-inbox inbox"><div class="icon"><i class="fas fa-user"></i></div><div class="msg-header"><p>'+ result +'</p></div></div>';
+			$(".form").append($replay);
+			// when chat goes down the scroll bar automatically comes to the bottom
+			$(".form").scrollTop($(".form")[0].scrollHeight);
+		*/
+	}
+	});
 }
 function cleanCadena(value) {
  return  value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");

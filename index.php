@@ -95,7 +95,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
       <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title text-center">
-          <h1>Nuestro equipo</h1>
+          <h1><b>Nuestro equipo</b></h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         </div>
       </div>
@@ -222,7 +222,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
       <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title">
-          <h1>Servicios</h1>
+          <h1><b>Servicios</b></h1>
           <p>Descripcion de los servicios que se ofrecen.</p>
         </div>
       </div>

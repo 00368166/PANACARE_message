@@ -13,6 +13,11 @@ if (!empty($_POST)) {
         $nombre = $_POST['nombre'];
         $telefono = $_POST['telefono'];
         $mensaje = $_POST['mensaje'];
+        //$dtz = new DateTimeZone("America/Mexico");
+        //$dt = new DateTime("now", $dtz);
+        sdate_default_timezone_set('America/Mexico_City');
+        $mifecha = date('Y-m-d');
+        $mitime = date('H:i:s');
 
 $query = mysqli_query($conexion, "SELECT * FROM message where message_nombre = '$nombre'");
         $result = mysqli_fetch_array($query);
@@ -23,7 +28,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message where message_nombre = '
             Todos los campos son necesarios.
           </div>';
         } else {
-            $query_insert = mysqli_query($conexion, "INSERT INTO message(message_nombre,message_telefono, message_text) values ( '$nombre', '$telefono', '$mensaje') ");
+            $query_insert = mysqli_query($conexion, "INSERT INTO message(message_nombre,message_telefono, message_text, message_date, message_time) values ( '$nombre', '$telefono', '$mensaje', '$mifecha', '$mitime') ");
             if ($query_insert) {
                 $alert = '<div class="alert alert-info alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

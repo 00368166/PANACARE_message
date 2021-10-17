@@ -63,7 +63,7 @@ include "../sesion.php";
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="https://www.panacare.com.mx/nMlSIV9N4qpgtJnJ3P4w/pages/" class="brand-link">
       <img src="../../images/logg.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">PANACARE</span>
     </a>
@@ -84,6 +84,21 @@ include "../sesion.php";
 						} ?></a>
         </div>
       </div>
+
+			<nav class="mt-2">
+				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+			<li class="nav-item">
+				<a href="./messages.php" class="nav-link">
+					<i class="nav-icon far fa-image"></i>
+					<p>
+						Mensajes
+					</p>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">

@@ -32,7 +32,7 @@ else{
 
 
 
-      if(strlen($_POST['nombre'])>10 && strlen($_POST['nombre']) < 100 ){
+      if(strlen($_POST['nombre'])>8 && strlen($_POST['nombre']) < 100 ){
       if(strlen($_POST['telefono']) != 10){
         $alert = '<div class="alert alert-warning alert-dismissible">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -79,7 +79,7 @@ else{
   $alert = '<div class="alert alert-danger alert-dismissible">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <h5>¡Alerta!</h5>
-    Ingrese un nombre válido.
+    Ingrese nombre y apellido.
   </div>';
 }
 }

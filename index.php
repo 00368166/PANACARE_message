@@ -10,9 +10,39 @@ if (!empty($_POST)) {
         Todos los campos son necesarios.
       </div>';
     } else {
-        $nombre = $_POST['nombre'];
-        $telefono = $_POST['telefono'];
-        $mensaje = $_POST['mensaje'];
+      $nombre = $_POST['nombre'];
+      $telefono = $_POST['telefono'];
+      $mensaje = $_POST['mensaje'];
+      $regexp = '/^[A-Za-zÀ-ÿ\u00f1\u00d10-9\s+]+$/i';
+      $regexp2 = '/^[A-Za-zÀ-ÿ\u00f1\u00d1\s+]+$/i';
+
+      $resultado = preg_match($regexp2, $nombre);
+      $resultado2 = preg_match($regexp, $mensaje);
+      $resultado3 = preg_match($regexp, $telefono);
+
+if(!$resultado){
+  $alert = '<div class="alert alert-warning alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h5>¡Alerta!</h5>
+    No se permiten numeros en los nombres.
+  </div>';
+}
+else{
+      if( $resultado2 && $resultado3) {
+
+
+
+      if(strlen($_POST['nombre'])>10 && strlen($_POST['nombre']) < 100 ){
+      if(strlen($_POST['telefono']) != 10){
+        $alert = '<div class="alert alert-warning alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <h5>¡Alerta!</h5>
+          Ingrese un numero valido.
+        </div>';
+      }
+      else{
+
+
         //$dtz = new DateTimeZone("America/Mexico");
         //$dt = new DateTime("now", $dtz);
         date_default_timezone_set('America/Mexico_City');
@@ -44,6 +74,27 @@ Mensaje enviado
         }
 }
 }
+}
+else{
+  $alert = '<div class="alert alert-danger alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h5>¡Alerta!</h5>
+    Ingrese un nombre válido.
+  </div>';
+}
+}
+else{
+  $alert = '<div class="alert alert-danger alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h5>¡Alerta!</h5>
+    No se aceptan caracteres especiales.
+  </div>';
+}
+
+}
+}
+
+
 mysqli_close($conexion);
 }
 ?>

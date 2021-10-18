@@ -37,7 +37,7 @@ else{
         $alert = '<div class="alert alert-warning alert-dismissible">
           <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
           <h5>¡Alerta!</h5>
-          Ingrese un numero valido.
+          Ingrese un numero de telefono valido.
         </div>';
       }
       else{

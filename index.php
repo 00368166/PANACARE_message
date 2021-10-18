@@ -19,13 +19,13 @@ if (!empty($_POST)) {
         $mifecha = date('Y-m-d');
         $mitime = date('H:i:s');
 
-$query = mysqli_query($conexion, "SELECT * FROM message where message_nombre = '$nombre'");
+$query = mysqli_query($conexion, "SELECT * FROM message where message_telefono = '$telefono'");
         $result = mysqli_fetch_array($query);
         if ($result > 0) {
           $alert = '<div class="alert alert-warning alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
             <h5>¡Alerta!</h5>
-            Todos los campos son necesarios.
+            Ya hemos recibido su mensaje previamente.
           </div>';
         } else {
             $query_insert = mysqli_query($conexion, "INSERT INTO message(message_nombre,message_telefono, message_text, message_date, message_time) values ( '$nombre', '$telefono', '$mensaje', '$mifecha', '$mitime') ");
@@ -304,7 +304,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
             <input  type="text" class="form-control" name="nombre" id="name" placeholder="Nombre">
           </div>
           <div class="col-md-6 col-sm-6">
-            <input  type="phone" class="form-control" name="telefono" id="phone" placeholder="Telefono Ej: &ldquo;9511876322&rdquo;">
+            <input  type="tel" class="form-control" name="telefono" id="phone" placeholder="Telefono Ej: &ldquo;9511876322&rdquo;">
           </div>
           <div class="col-md-12 col-sm-12">
             <textarea type="text" rows="6" class="form-control" name="mensaje" id="message" placeholder="Mensaje"></textarea>

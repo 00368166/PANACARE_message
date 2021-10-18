@@ -34,7 +34,7 @@
       while ($messages = mysqli_fetch_assoc($query)) {
         $fecha = $messages['message_date'];
         $hora =  $messages['message_time'];
-
+        $tel = $messages['message_telefono'];
         ?>
 
       <!-- Timelime example  -->
@@ -52,10 +52,13 @@
               <i class="fas fa-envelope bg-blue"></i>
               <div class="timeline-item">
                 <span class="time"><i class="fas fa-clock"></i> <?php echo $hora; ?></span>
-                <h3 class="timeline-header"><a href="#"><?php echo $messages['message_nombre']; ?></a> envió un mensaje</h3>
+                <h3 class="timeline-header"><a><?php echo $messages['message_nombre']; ?></a> envió un mensaje</h3>
 
                 <div class="timeline-body">
                   <?php echo $messages['message_text']; ?>
+                </div>
+                <div class="timeline-body">
+                <a>Contacto: <?php echo $tel; ?></a>
                 </div>
                 <div class="timeline-footer">
                   <?php if ($_SESSION['rol'] == 1){ ?>

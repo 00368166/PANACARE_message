@@ -15,7 +15,7 @@ if (!empty($_POST)) {
         $mensaje = $_POST['mensaje'];
         //$dtz = new DateTimeZone("America/Mexico");
         //$dt = new DateTime("now", $dtz);
-        sdate_default_timezone_set('America/Mexico_City');
+        date_default_timezone_set('America/Mexico_City');
         $mifecha = date('Y-m-d');
         $mitime = date('H:i:s');
 

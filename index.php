@@ -24,7 +24,7 @@ if(!$resultado){
   $alert = '<div class="alert alert-warning alert-dismissible">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <h5>¡Alerta!</h5>
-    No se permiten numeros en los nombres.
+    Nombre no valido, no se permiten numeros ni caracteres especiales.
   </div>';
 }
 else{

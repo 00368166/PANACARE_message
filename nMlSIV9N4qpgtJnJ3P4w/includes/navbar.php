@@ -5,6 +5,10 @@ if (empty($_SESSION['active'])) {
 }
 include "../sesion.php";
 ?>
+<?php
+$query = mysqli_query($conexion, "SELECT * FROM message");
+        $messages = mysqli_num_rows($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,6 +96,7 @@ include "../sesion.php";
 					<i class="nav-icon far fa-image"></i>
 					<p>
 						Mensajes
+						<span class="badge badge-info right"><?php echo $messages; ?></span>
 					</p>
 				</a>
 			</li>

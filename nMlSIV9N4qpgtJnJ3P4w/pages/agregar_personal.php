@@ -1,7 +1,7 @@
 <?php
 include_once "../includes/navbar.php";
 include "../sesion.php";
-if(isset($_POST['enviar'])){
+if(isset($_REQUEST['enviar'])){
 if (!empty($_POST)) {
   if (empty($_POST['nombre']) || empty($_POST['telefono']) || empty($_POST['disponibilidad']) || empty($_POST['descrip'])) {
     $alert = '<div class="alert alert-warning alert-dismissible">
@@ -18,6 +18,21 @@ if (!empty($_POST)) {
       $nacimiento = date("Y-m-d", strtotime($fecha) );
       $disponibilidad = $_POST['disponibilidad'];
       $descrip = $_POST['descrip'];
+      if(isset($_FILES['foto']['name'])){
+        $tipoArchivo=$_FILES['foto']['type'];
+        $nombreArchivo=$_FILES['foto']['name'];
+        $tamanoArchivo=$_FILES['foto']['size'];
+        $imagenSubida=fopen($_FILES['foto']['tmp_name'],'r');
+        $binariosImagen=fread($imagenSubida,$tamanoArchivo); //transforma la imagen a binarios
+        $binariosImagen=mysqli_escape_string($conexion,$binariosImagen); //limpia binariosImagen
+      }
+      else{
+        $nombreArchivo="";
+        $tamanoArchivo="";
+        $binariosImagen="";
+        $tipoArchivo="";
+      }
+
 
       $result = 0;
           $query = mysqli_query($conexion, "SELECT * FROM enfermeras where enfermeras_nombre = '$nombre'");
@@ -29,7 +44,7 @@ if (!empty($_POST)) {
           Ya tenemos una enfermera registrada con este nombre.
         </div>';
       } else {
-          $query_insert = mysqli_query($conexion, "INSERT INTO enfermeras(enfermeras_nombre,enfermeras_telefono,enfermeras_disponibilidad,enfermeras_nacimiento,enfermeras_general) values ('$nombre', '$telefono', '$disponibilidad', '$nacimiento', '$descrip')");
+          $query_insert = mysqli_query($conexion, "INSERT INTO enfermeras(enfermeras_nombre,enfermeras_telefono,enfermeras_disponibilidad,enfermeras_nacimiento,enfermeras_general,nombre_imagen,enfermeras_foto,tipo_imagen) values ('$nombre', '$telefono', '$disponibilidad', '$nacimiento', '$descrip','$nombreArchivo','$binariosImagen','$tipoArchivo')");
           if ($query_insert) {
             $alert = '<div class="alert alert-info alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -136,7 +151,7 @@ else{
             <div class="form-group">
               <label for="exampleInputPassword1">Foto</label>
               <div class="form-group">
-                <input type="file" class="form-control" name="foto">
+                <input  class="form-control-file" name="foto" id="foto" type="file"/>
               </div>
             </div>
 
@@ -145,7 +160,7 @@ else{
         <div class="form-group">
         </div>
                     <div class="card-footer">
-                      <button type="submit"  name="enviar2" class="btn btn-primary">Submit</button>
+                      <button type="submit"  name="enviar" class="btn btn-primary">Submit</button>
                     </div>
                   </form>
 

@@ -10,7 +10,9 @@ CREATE TABLE `enfermeras` (
   `enfermeras_disponibilidad` text COLLATE utf8_spanish_ci NOT NULL,
   `enfermeras_nacimiento` date COLLATE utf8_spanish_ci NOT NULL,
   `enfermeras_general` text COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_imagen` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `enfermeras_foto` MEDIUMBLOB,
+  `tipo_imagen` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
   `enfermeras_tipo` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 

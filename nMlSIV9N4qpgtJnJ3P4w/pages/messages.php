@@ -86,6 +86,9 @@
                     <form action="eliminar_mensaje.php?id=<?php echo $messages['message_id']; ?>" method="post" class="confirmar d-inline">
                       <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar mensaje</a></i> </button>
                     </form>
+                    <a href="tel:<?=$tel?>" class="btn btn-sm bg-teal">
+                      <i  class="fas fa-comments"> Llamar</i>
+                    </a>
 
                 <?php   } ?>
 

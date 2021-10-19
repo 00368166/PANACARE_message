@@ -15,36 +15,17 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="images/png" href="../includes/aa.png" />
+    <link rel="icon" type="images/png" href="./includes/aa.png" />
   <title>PANACARE | Administración</title>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="../includes/aa.png" alt="PANACARE"  height="60" width="60">
+    <img class="animation__shake" src="../includes/aa.png" alt="PANACARE"  height="50" width="50">
     <h5>Sistema de Administración</h5s>
   </div>
 
@@ -77,7 +58,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-1" alt="User Image">
+          <img src="../pages/dist/img/user2-160x160.jpg" class="img-circle elevation-1" alt="User Image">
         </div>
         <div class="info">
           <a class="d-block"><?php echo $_SESSION['nombre']; ?></a>
@@ -92,6 +73,19 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 			<nav class="mt-2">
 				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 			<li class="nav-item">
+				<a href="./" class="nav-link">
+					<i class="nav-icon fas fa-home"></i>
+					<p>
+						Inicio
+					</p>
+				</a>
+			</li>
+			</ul>
+			</nav>
+
+			<nav class="mt-2">
+				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+			<li class="nav-item">
 				<a href="./messages.php" class="nav-link">
 					<i class="nav-icon far fa-image"></i>
 					<p>
@@ -101,6 +95,35 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 				</a>
 			</li>
 		</ul>
+	</nav>
+
+
+	<nav class="mt-2">
+		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+	<li class="nav-item">
+		<a href="./enfermeras.php" class="nav-link">
+			<i class="nav-icon fas fa-user-nurse"></i>
+			<p>
+				Enfermeras
+			</p>
+		</a>
+	</li>
+
+
+	</ul>
+	</nav>
+
+	<nav class="mt-2">
+		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+	<li class="nav-item">
+		<a href="./agregar_personal.php" class="nav-link">
+			<i class="nav-icon fas  fa-plus-square"></i>
+			<p>
+				Agregar Personal
+			</p>
+		</a>
+	</li>
+	</ul>
 	</nav>
 
 

@@ -20,7 +20,7 @@ if (!empty($_POST)) {
       $descrip = $_POST['descrip'];
       if(isset($_FILES['foto']['name'])){
         $tipoArchivo=$_FILES['foto']['type'];
-        $nombreArchivo=$_FILES['foto']['name'];
+        $nombreArchivo= $_FILES['foto']['name'];
         $tamanoArchivo=$_FILES['foto']['size'];
         $imagenSubida=fopen($_FILES['foto']['tmp_name'],'r');
         $binariosImagen=fread($imagenSubida,$tamanoArchivo); //transforma la imagen a binarios
@@ -120,11 +120,11 @@ else{
           <div class="card-body">
             <div class="form-group">
               <label for="exampleInputEmail1">Nombre</label>
-              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Enter email">
+              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingresar nombre completo">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Telefono</label>
-              <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Password">
+              <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Ej: 9511876322">
             </div>
             <div class="form-group">
               <label>Fecha de nacimiento</label>
@@ -139,13 +139,13 @@ else{
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Disponibilidad</label>
-              <input type="text" class="form-control" name="disponibilidad" id="disponibilidad" placeholder="Password">
+              <input type="text" class="form-control" name="disponibilidad" id="disponibilidad" placeholder="Dias y horarios disponibles para laborar">
             </div>
 
 
             <div class="form-group">
               <label for="exampleInputPassword1">Descripción</label>
-              <input type="text" class="form-control" name="descrip" id="descrip" placeholder="Password">
+              <input type="text" class="form-control" name="descrip" id="descrip" placeholder="Breve Descripcion de la persona">
             </div>
 
             <div class="form-group">

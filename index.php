@@ -13,7 +13,7 @@ if (!empty($_POST)) {
       $nombre = $_POST['nombre'];
       $telefono = $_POST['telefono'];
       $mensaje = $_POST['mensaje'];
-      $regexp = '/^[A-Za-zÀ-ÿ\u00f1\u00d10-9\s+]+$/i';
+      $regexp = '/^[A-Za-zÀ-ÿ\u0021\u00f1\u002C\u002e\u0040\u003f\u00a1\u00bf\u00d10-9\s+]+$/i';
       $regexp2 = '/^[A-Za-zÀ-ÿ\u00f1\u00d1\s+]+$/i';
 
       $resultado = preg_match($regexp2, $nombre);
@@ -87,7 +87,7 @@ else{
   $alert = '<div class="alert alert-danger alert-dismissible">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <h5>¡Alerta!</h5>
-    No se aceptan caracteres especiales como: *-+!|"#$%&/()=?¡¿.
+    No se aceptan caracteres especiales como: *-+|"#$%&/()=
   </div>';
 }
 
@@ -158,109 +158,40 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
 
       <!-- team carousel -->
       <div id="team-carousel" class="owl-carousel">
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img  src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
-          </div>
-          <h2 class="heading">Integrante 1</h2>
-          <p class="description">Aliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus estliquam ac justo est. Praesent feugiat cursus est.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
-          </div>
-          <h2 class="heading">Integrante 2</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
+        <?php
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
-          </div>
-          <h2 class="heading">Integrante 3</h2>
-          <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
+        include "interno/sesion.php";
+        $query = mysqli_query($conexion, "SELECT * FROM enfermeras");
+                $enfermeras = mysqli_num_rows($query);
+        if ($enfermeras > 0) {
+        while ($enfermeras = mysqli_fetch_assoc($query)) {
+          $nombre = $enfermeras['enfermeras_nombre'];
+          $general =  $enfermeras['enfermeras_general'];
+          $dispo = $enfermeras['enfermeras_disponibilidad'];
+          ?>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
+          <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-thumb">
+              <div class="image-holder">
+                <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
+              </div>
+              <h2 class="heading"><?php echo $nombre ?></h2>
+              <div class="row">
+              <p class="description"><?php echo $general ?></p>
+            </div>
+            <div class="row">
+            <a class="description">Disponibilidad: <?php echo $dispo ?></a>
           </div>
-          <h2 class="heading">Integrante 4</h2>
-          <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
+              <div class="cc">
+                <a href="/" align="right" class="description">Leer mas</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
-          </div>
-          <h2 class="heading">Integrante 5</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
-          </div>
-          <h2 class="heading">Integrante 6</h2>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
-          </div>
-          <h2 class="heading">Integrante 7</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
-          </div>
-          <h2 class="heading">Integrante 8</h2>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-          <div class="cc">
-            <a href="/" align="right" class="description">Leer mas</a>
-          </div>
-        </div>
-      </div>
+        <?php } ?>
+        <?php } ?>
 
       </div>
       <!-- end team carousel -->

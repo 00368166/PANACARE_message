@@ -104,13 +104,13 @@
               </form>
           </tr>
         -->
+        <div>
+          <i class="fas fa-clock bg-gray"></i>
+        </div>
+      </div>
       <?php } ?>
       <?php } ?>
 
-            <div>
-              <i class="fas fa-clock bg-gray"></i>
-            </div>
-          </div>
         </div>
         <!-- /.col -->
       </div>

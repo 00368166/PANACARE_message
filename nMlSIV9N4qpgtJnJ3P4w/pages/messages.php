@@ -84,13 +84,15 @@
                 <div class="timeline-footer">
                   <?php if ($_SESSION['rol'] == 1){ ?>
                     <form action="eliminar_mensaje.php?id=<?php echo $messages['message_id']; ?>" method="post" class="confirmar d-inline">
-                      <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar mensaje</a></i> </button>
+                      <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar</a></i> </button>
                     </form>
+                  <?php   } ?>
                     <a href="tel:<?=$tel?>" class="btn btn-sm bg-teal">
-                      <i  class="fas fa-comments"> Llamar</i>
+                      <i  class="fas fa-phone-volume"> Llamar</i>
                     </a>
-
-                <?php   } ?>
+                    <a href="https://api.whatsapp.com/send?phone=521<?=$tel?>&text=Hola%20*<?=$messages['message_nombre']?>*%20es%20un%20gusto%20saludarte%20nos%20ponemos%20en%20contacto%20contigo%20por%20que%20nos%20dejaste%20un%20mensaje%20en%20nuestra%20pagina%20web%2C%20por%20el%20motivo%20de%20*<?=$messages['message_text']?>*%20,con%20gusto%20te%20atenderemos%20😄%20recuerda%20que%20para%20nosotros%20*La%20salud%20en%20tu%20mirada%20es%20nuestra%20inspiración*" class="btn btn-sm bg-teal">
+                      <i  class="fab fa-whatsapp"> Whatsapp</i>
+                    </a>
 
                 </div>
               </div>

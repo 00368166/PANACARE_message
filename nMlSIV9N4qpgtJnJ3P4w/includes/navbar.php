@@ -126,6 +126,31 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 	</ul>
 	</nav>
 
+	<nav class="mt-2">
+		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+	<li class="nav-item">
+		<a href="./clientes.php" class="nav-link">
+			<i class="nav-icon fas fa-address-book"></i>
+			<p>
+				Clientes
+			</p>
+		</a>
+	</li>
+	</ul>
+	</nav>
+
+	<nav class="mt-2">
+		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+	<li class="nav-item">
+		<a href="./agregar_clientes.php" class="nav-link">
+			<i class="nav-icon fas  fa-plus-square"></i>
+			<p>
+				Agregar Clientes
+			</p>
+		</a>
+	</li>
+	</ul>
+	</nav>
 
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">

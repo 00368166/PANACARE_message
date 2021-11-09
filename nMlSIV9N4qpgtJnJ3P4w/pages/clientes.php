@@ -28,7 +28,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Enfermeras</h1>
+          <h1>Clientes</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -46,15 +46,15 @@
         <div class="row">
     <?php
     include "../sesion.php";
-    $query = mysqli_query($conexion, "SELECT * FROM enfermeras");
-            $enfermeras = mysqli_num_rows($query);
-    if ($enfermeras > 0) {
-    while ($enfermeras = mysqli_fetch_assoc($query)) {
-      $nombre = $enfermeras['enfermeras_nombre'];
-      $disponibilidad =  $enfermeras['enfermeras_disponibilidad'];
-      $tel = $enfermeras['enfermeras_telefono'];
-        $nacimiento = $enfermeras['enfermeras_nacimiento'];
-          $descrip = $enfermeras['enfermeras_general'];
+    $query = mysqli_query($conexion, "SELECT * FROM clientes");
+            $clientes = mysqli_num_rows($query);
+    if ($clientes > 0) {
+    while ($clientes = mysqli_fetch_assoc($query)) {
+      $nombre = $clientes['clientes_nombre'];
+      $direccion =  $clientes['clientes_direccion'];
+      $tel = $clientes['clientes_telefono'];
+        $atencion = $clientes['clientes_atencion'];
+          $descrip = $clientes['clientes_descripcion'];
       ?>
         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
           <div class="card bg-light d-flex flex-fill">
@@ -65,14 +65,14 @@
               <div class="row">
                 <div class="col-7">
                   <h2 class="lead"><b><?php echo $nombre ?></b></h2>
-                  <p class="text-muted text-sm"><b>Acerca de: </b><?php echo $descrip?></p>
+                  <p class="text-muted text-sm"><b>Servicio: </b><?php echo $descrip?></p>
+                  <p class="text-muted text-sm"><b>Atencion: </b><?php echo $atencion?></p>
                   <ul class="ml-4 mb-0 fa-ul text-muted">
-                    <li class="small"><span class="fa-li"><i class="fas fa-user-clock"></i></span> Disponibilidad: <?php echo $disponibilidad?></li>
-                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Telefono: + 52 <?php echo $tel ?></li>
+                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Direccion: <?php echo $direccion?></li>
+                    <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Telefono #: + 52 <?php echo $tel ?></li>
                   </ul>
                 </div>
                 <div class="col-5 text-center">
-                  <img src="../../dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
                 </div>
               </div>
             </div>
@@ -84,6 +84,7 @@
                 <a href="https://api.whatsapp.com/send?phone=521<?=$tel?>&text=Hola%2C%20me%20contacto%20desde%20PANACARE%20por%20motivo%20el%20motivo%20siguiente%3A%20" class="btn btn-sm bg-teal">
                   <i  class="fab fa-whatsapp"> Whatsapp</i>
                 </a>
+
                 <a href="#" class="btn btn-sm btn-primary">
                   <i class="fas fa-user"></i> Editar perfil
                 </a>

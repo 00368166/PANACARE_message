@@ -90,7 +90,7 @@
                     <a href="tel:<?=$tel?>" class="btn btn-sm bg-teal">
                       <i  class="fas fa-phone-volume"> Llamar</i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=521<?=$tel?>&text=Hola%20*<?=$messages['message_nombre']?>*%20es%20un%20gusto%20saludarte%20nos%20ponemos%20en%20contacto%20contigo%20por%20que%20nos%20dejaste%20un%20mensaje%20en%20nuestra%20pagina%20web%2C%20por%20el%20motivo%20de%20*<?=$messages['message_text']?>*%20,con%20gusto%20te%20atenderemos%20😄%20recuerda%20que%20para%20nosotros%20*La%20salud%20en%20tu%20mirada%20es%20nuestra%20inspiración*" class="btn btn-sm bg-teal">
+                    <a href="https://api.whatsapp.com/send?phone=521<?=$tel?>&text=Hola%20*<?=$messages['message_nombre']?>*%20es%20un%20gusto%20saludarte%20nos%20ponemos%20en%20contacto%20contigo%20por%20que%20nos%20dejaste%20un%20mensaje%20en%20nuestra%20pagina%20web%2C%20por%20el%20motivo%20de%20*<?=$messages['message_text']?>*,%20con%20gusto%20te%20atenderemos%20😄%20recuerda%20que%20para%20nosotros%20*La%20salud%20en%20tu%20mirada%20es%20nuestra%20inspiración*" class="btn btn-sm bg-teal">
                       <i  class="fab fa-whatsapp"> Whatsapp</i>
                     </a>
 

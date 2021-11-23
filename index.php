@@ -130,15 +130,28 @@ mysqli_close($conexion);
       <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
         <div class="about-thumb">
           <h1><b>Mision</b></h1>
-          <pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
-
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
+          <pp>Ofrecer tranquilidad tanto a familiares como pacientes durante sus dolencias, siempre brindando un servicio de acompañamiento y cuidado variado, personalizado, constante, cálido y correcto en los momentos más apremiantes para alcanzar un óptimo estado de salud.</pp>
 <h1><b>Vision</b></h1>
-<pp>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam, nulla facilisi molestie rhoncus curae mattis dictumst, cras commodo aptent eleifend lacus ac nisi. Metus lectus quis himenaeos non sociosqu hac mus, eget netus consequat felis sociis ac velit porttitor, iaculis nec nullam torquent posuere fringilla. Posuere arcu habitasse primis pellentesque fermentum nam morbi litora hendrerit dictumst interdum sapien ante sem sollicitudin, lobortis metus rutrum nascetur aliquam cubilia turpis justo elementum libero proin sodales dapibus montes. Per fames cubilia interdum pulvinar et dui elementum ad laoreet convallis aenean, ante dictum imperdiet posuere metus tincidunt rhoncus justo potenti habitasse litora, parturient pretium tempor rutrum sapien neque curae nam mattis velit.
-
-Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sapien iaculis commodo cursus, curae penatibus scelerisque nostra nisl vitae. Eleifend torquent accumsan primis in litora fringilla vitae, ligula hendrerit et rutrum scelerisque non leo, quisque platea aenean justo magnis imperdiet. Faucibus mi tincidunt neque primis etiam commodo, metus nec fusce hac senectus arcu egestas, erat elementum praesent ridiculus risus.</pp>
-
-        </div>
+<pp>Llegar a ser una agencia líder en el mercado oaxaqueño que pueda contratar no solo una alta gama de enfermeros, sino que también ofrezca una enorme variedad de especialidades médicas, de modo que ninguno de nuestros clientes vuelva a pasar por la angustia de no saber a quién acudir.</pp>
+<h1><b>Valores</b></h1>
+<pp>
+<b>
+  Respeto:<br>
+</b>
+  Dar valor a todos los individuos reconociendo y aceptando la importancia de los demás.
+<br>
+  <b>
+    Responsabilidad:<br>
+  </b>
+  Cuidar tanto de nuestro personal como de nuestros pacientes en respuesta de la confianza que se nos otorga.
+<br>
+  <b>
+    Solidaridad:<br>
+  </b>
+  Proteger la salud de aquellos que presenten convalecientes siempre tratándolos con dignidad y humanidad.
+<br>
+  <pp>
+</div>
       </div>
 
       <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
@@ -219,9 +232,9 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <figure>
             <div><img src="images/care.jpg" alt="image 1"></div>
             <figcaption>
-              <h2>Enfermeria geriatrica</h2>
+              <h2>Servicios de enfermería</h2>
               <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
-              <a href="#">Leer mas</a>
+              <a href="servicios_de_enfermeria.php">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -230,7 +243,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <figure>
             <div><img src="images/ped.jpg" alt="image 2"></div>
             <figcaption>
-              <h2>Enfermeria Pediatrica</h2>
+              <h2>Renta de equipo hospitalario</h2>
               <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
               <a href="#">Leer mas</a>
             </figcaption>
@@ -241,7 +254,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <figure>
             <div><img src="images/ser.jpg" alt="image 3"></div>
             <figcaption>
-              <h2>Enfermeria Auxiliar</h2>
+              <h2>Asesoramiento</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
               <a href="#">Leer mas</a>
             </figcaption>
@@ -252,7 +265,7 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
           <figure>
             <div><img src="images/equi.jpg" alt="image 4"></div>
 						<figcaption>
-              <h2>Equipamiento hospitalario</h2>
+              <h2>Venta de insumos médicos</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
               <a href="#">Detalles</a>
             </figcaption>
@@ -304,5 +317,16 @@ Integer quisque magnis fames viverra nam quam ullamcorper, sed est ut aenean sap
     </div>
   </div>
 </section>
+
+<!-- Footer section -->
+<footer>
+	<div class="container">
+		<div class="col-md-offset-1 col-md-10 col-sm-12">
+			<div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="1.0s">
+<h1>ó</h1>
+				<h1>contactanos en cualquiera de nuestras redes sociales.</h1>
+
+			</div>
+		</div>
 
 <?php include_once "includes/footer.php"; ?>

@@ -1,24 +1,14 @@
 
 
-<!-- Footer section -->
-<footer>
-	<div class="container">
-		<div class="col-md-offset-1 col-md-10 col-sm-12">
-			<div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="1.0s">
-<h1>ó</h1>
-				<h1>contactanos en cualquiera de nuestras redes sociales.</h1>
-			
-			</div>
-		</div>
 
 		<div class="row">
 
 			<div class="col-md-12 col-sm-12">
 
                 <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1.2s"></a></li>
-										<li><a href="#" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="1.4s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="1.6s"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook wow fadeInUp" data-wow-delay="1.2s"></a></li>
+										<li><a href="https://api.whatsapp.com/send?phone=5219511876322&text=Hola!%2C%20¿Me%20podrían%20brindar%20más%20información%20porfavor%3F"target="_blank" class="fa fa-whatsapp wow fadeInUp" data-wow-delay="1.4s"></a></li>
+                    <li><a href="https://www.instagram.com/panacare_cuidados/" target="_blank"class="fa fa-instagram wow fadeInUp" data-wow-delay="1.6s"></a></li>
                 </ul>
 
 				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2021 PANACARE |

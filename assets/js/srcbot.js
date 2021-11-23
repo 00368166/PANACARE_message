@@ -108,7 +108,7 @@ Bots.push({
       ["nacidos","recien nacidos","embarazadas","embarazada","embarazo","nacido"],
       ["equipamiento","hospitalario"],
       ["geriatrica","geriatra"],
-      ["pediatrica","pediatra"],
+      ["pediatrica","pediatra","infantil"],
       ["oncologica","oncologa"]
     ],
     "variables": {}

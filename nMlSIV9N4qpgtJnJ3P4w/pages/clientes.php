@@ -66,8 +66,8 @@
               <div class="row">
                 <div class="col-7">
                   <h2 class="lead"><b><?php echo $nombre ?></b></h2>
-                  <p class="text-muted text-sm"><b>Servicio: </b><?php echo $descrip?></p>
                   <p class="text-muted text-sm"><b>Atencion: </b><?php echo $atencion?></p>
+                  <p class="text-muted text-sm"><b>Detalles del servicio: </b><?php echo $descrip?></p>
                   <ul class="ml-4 mb-0 fa-ul text-muted">
                     <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Direccion: <?php echo $direccion?></li>
                     <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Telefono #: + 52 <?php echo $tel ?></li>

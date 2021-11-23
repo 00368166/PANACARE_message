@@ -83,6 +83,9 @@
                   <form action="eliminar_enfermeras.php?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
                     <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar</a></i> </button>
                   </form>
+                  <form action="editar_personal.php?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
+                    <button class="btn btn-sm btn-primary" type="submit"><i class='fas fa-user'> <a>Editar perfil</a></i> </button>
+                  </form>
                 <?php   } ?>
                 <a href="tel:<?=$tel?>" class="btn btn-sm bg-teal">
                   <i  class="fas fa-comments"> Llamar</i>
@@ -90,9 +93,7 @@
                 <a href="https://api.whatsapp.com/send?phone=521<?=$tel?>&text=Hola%20*<?=$nombre?>*%2C%20nos%20permitimos%20contactarte%20por%20whatsapp%20para%20confirmar%20que%20aun%20cuentes%20con%20la%20siguiente%20disponibilidad%3A%20*<?=$disponibilidad?>*%20por%20motivo%20de%20que%20tienes%20una%20oferta%20de%20servicio%20disponible%2C%20esperamos%20tu%20pronta%20respuesta." class="btn btn-sm bg-teal">
                   <i  class="fab fa-whatsapp"> Whatsapp</i>
                 </a>
-                <a href="#" class="btn btn-sm btn-primary">
-                  <i class="fas fa-user"></i> Editar perfil
-                </a>
+
               </div>
             </div>
           </div>

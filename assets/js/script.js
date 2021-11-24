@@ -34,9 +34,8 @@ $(document).ready(function() {
 										'</div>'+
 									'</div><!--col-hgt end-->'+
 								'</div><!--row end-->'+
-							'</div><!--profile_div end-->'+
+							'</div><!--profile_div end-->';
 							setBotResponse('Hola, ¿En que puedo ayudarte?');
-
 	$("mybot").html(mybot);
 
 	// ------------------------------------------ Toggle chatbot -----------------------------------------------

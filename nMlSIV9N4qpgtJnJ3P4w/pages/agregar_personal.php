@@ -1,7 +1,8 @@
 <?php
 include_once "../includes/navbar.php";
 include "../sesion.php";
-if(isset($_REQUEST['enviar'])){
+include_once "../includes/navbar.php";
+include "../sesion.php";
 if (!empty($_POST)) {
   if (empty($_POST['nombre']) || empty($_POST['telefono']) || empty($_POST['disponibilidad']) || empty($_POST['descrip'])) {
     $alert = '<div class="alert alert-warning alert-dismissible">
@@ -18,18 +19,36 @@ if (!empty($_POST)) {
       $nacimiento = date("Y-m-d", strtotime($fecha) );
       $disponibilidad = $_POST['disponibilidad'];
       $descrip = $_POST['descrip'];
-      if(isset($_FILES['foto']['name'])){
+      if(!empty($_FILES['foto'])){
         $tipoArchivo=$_FILES['foto']['type'];
         $nombreArchivo= $_FILES['foto']['name'];
-        $tamanoArchivo=$_FILES['foto']['size'];
-        $imagenSubida=fopen($_FILES['foto']['tmp_name'],'r');
-        $binariosImagen=fread($imagenSubida,$tamanoArchivo); //transforma la imagen a binarios
-        $binariosImagen=mysqli_escape_string($conexion,$binariosImagen); //limpia binariosImagen
+        $guardado=$_FILES['foto']['tmp_name'];
+        $directorio ="../../fotos/enfermeras/";
+ $ruta = "../../fotos/enfermeras/".$nombreArchivo;
+ if(!file_exists($directorio)){
+	mkdir($directorio ,0777,true);
+	if(file_exists($directorio)){
+
+		if(move_uploaded_file($guardado, "../../fotos/enfermeras/".$nombreArchivo)){
+			echo "Archivo guardado con exito";
+		}else{
+			echo "Archivo no se pudo guardar";
+		}
+	}
+}else{
+		if(move_uploaded_file($guardado, "../../fotos/enfermeras/".$nombreArchivo)){
+		echo "Archivo guardado con xxito";
+
+	}else{
+		echo "Este archivo ya existe en el directorio";
+	}
+
+	var_dump($ruta);
+
+}
       }
       else{
         $nombreArchivo="";
-        $tamanoArchivo="";
-        $binariosImagen="";
         $tipoArchivo="";
       }
 
@@ -44,7 +63,7 @@ if (!empty($_POST)) {
           Ya tenemos una enfermera registrada con este nombre.
         </div>';
       } else {
-          $query_insert = mysqli_query($conexion, "INSERT INTO enfermeras(enfermeras_nombre,enfermeras_telefono,enfermeras_disponibilidad,enfermeras_nacimiento,enfermeras_general,nombre_imagen,enfermeras_foto,tipo_imagen) values ('$nombre', '$telefono', '$disponibilidad', '$nacimiento', '$descrip','$nombreArchivo','$binariosImagen','$tipoArchivo')");
+          $query_insert = mysqli_query($conexion, "INSERT INTO enfermeras(enfermeras_nombre,enfermeras_telefono,enfermeras_disponibilidad,enfermeras_nacimiento,enfermeras_general,nombre_imagen,tipo_imagen) values ('$nombre', '$telefono', '$disponibilidad', '$nacimiento', '$descrip','$nombreArchivo','$tipoArchivo')");
           if ($query_insert) {
             $alert = '<div class="alert alert-info alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -67,7 +86,6 @@ else{
     <h5>Recordatorio</h5>
     Todos los campos son necesarios ampos necesarios.
   </div>';
-}
 }
 ?>
   <!-- Google Font: Source Sans Pro -->
@@ -114,7 +132,7 @@ else{
     <section class="content">
       <div class="container-fluid">
 
-      <form method="post">
+      <form method="post" enctype="multipart/form-data">
 
       <?php echo isset($alert) ? $alert : ""; ?>
           <div class="card-body">
@@ -160,7 +178,7 @@ else{
         <div class="form-group">
         </div>
                     <div class="card-footer">
-                      <button type="submit"  name="enviar" class="btn btn-primary">Submit</button>
+                      <button type="submit"  name="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </form>
 
@@ -282,57 +300,6 @@ else{
     window.stepper = new Stepper(document.querySelector('.bs-stepper'))
   })
 
-  // DropzoneJS Demo Code Start
-  Dropzone.autoDiscover = false
-
-  // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
-  var previewNode = document.querySelector("#template")
-  previewNode.id = ""
-  var previewTemplate = previewNode.parentNode.innerHTML
-  previewNode.parentNode.removeChild(previewNode)
-
-  var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-    url: "/fotos", // Set the url
-    thumbnailWidth: 80,
-    thumbnailHeight: 80,
-    parallelUploads: 20,
-    previewTemplate: previewTemplate,
-    autoQueue: false, // Make sure the files aren't queued until manually added
-    previewsContainer: "#previews", // Define the container to display the previews
-    clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
-  })
-
-  myDropzone.on("addedfile", function(file) {
-    // Hookup the start button
-    file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
-  })
-
-  // Update the total progress bar
-  myDropzone.on("totaluploadprogress", function(progress) {
-    document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-  })
-
-  myDropzone.on("sending", function(file) {
-    // Show the total progress bar when upload starts
-    document.querySelector("#total-progress").style.opacity = "1"
-    // And disable the start button
-    file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-  })
-
-  // Hide the total progress bar when nothing's uploading anymore
-  myDropzone.on("queuecomplete", function(progress) {
-    document.querySelector("#total-progress").style.opacity = "0"
-  })
-
-  // Setup the buttons for all transfers
-  // The "add files" button doesn't need to be setup because the config
-  // `clickable` has already been specified.
-  document.querySelector("#actions .start").onclick = function() {
-    myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-  }
-  document.querySelector("#actions .cancel").onclick = function() {
-    myDropzone.removeAllFiles(true)
-  }
   // DropzoneJS Demo Code End
 </script>
 

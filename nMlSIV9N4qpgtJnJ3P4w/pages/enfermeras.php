@@ -56,6 +56,7 @@
       $tel = $enfermeras['enfermeras_telefono'];
         $nacimiento = $enfermeras['enfermeras_nacimiento'];
           $descrip = $enfermeras['enfermeras_general'];
+          $imagen = $enfermeras['nombre_imagen']
       ?>
         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
           <div class="card bg-light d-flex flex-fill">
@@ -73,7 +74,7 @@
                   </ul>
                 </div>
                 <div class="col-5 text-center">
-                  <img src="../../dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                  <img src="../../fotos/enfermeras/<?php echo $imagen?>" alt="user-avatar" class="img-circle img-fluid">
                 </div>
               </div>
             </div>

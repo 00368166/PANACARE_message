@@ -14,6 +14,21 @@ $(document).ready(function() {
         $(".navbar-collapse").collapse('hide');
     });
 
+let ubicacion = window.pageYOffset;
+window.onscroll = function(){
+  let despla_act = window.pageYOffset;
+  if(ubicacion >= despla_act){
+    $(".navbar").collapse('show');
+      $(".navbar-collapse").collapse('hide');
+  //  document.getElementById('navbar').style.t op = '0';
+  }
+  else{
+      $(".navbar").collapse('show');
+    $(".navbar-collapse").collapse('hide');
+  //  document.getElementById('navbar').style.top = '-100px';
+  }
+  ubicacion = despla_act;
+}
 
   /* Smoothscroll js
   -----------------------------------------------*/

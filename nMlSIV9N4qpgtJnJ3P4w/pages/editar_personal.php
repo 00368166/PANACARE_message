@@ -19,8 +19,8 @@ if (!empty($_POST)) {
     $disponibilidad = $_POST['disponibilidad'];
     $descrip = $_POST['descrip'];
 
-    
-    $sql_update = mysqli_query($conexion, "UPDATE enfermeras SET enfermeras_nombre = '$nombre', enfermeras_telefono = '$telefono', enfermeras_nacimiento = '$nacimiento' , enfermeras_disponibilidad = $disponibilidad, enfermeras_general = $descrip WHERE enfermeras_id = $enfermera");
+
+    $sql_update = mysqli_query($conexion, "UPDATE enfermeras SET enfermeras_nombre = '$nombre', enfermeras_telefono = '$telefono', enfermeras_nacimiento = '$nacimiento' , enfermeras_disponibilidad = '$disponibilidad', enfermeras_general = '$descrip' WHERE enfermeras_id = '$enfermera'");
     $alert = '<div class="alert alert-info alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 Actualizada

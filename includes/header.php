@@ -58,7 +58,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <!-- Navigation section  -->
 
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
     <div class="container">
 
       <div class="navbar-header">
@@ -71,10 +71,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
-            <li><a href="#about" class="smoothScroll"><span>Acerca de nosotros</span></a></li>
-            <li><a href="#gallery" class="smoothScroll"><span>Servicios</span></a></li>
-            <li><a href="#contact" class="smoothScroll"><span>Contacto</span></a></li>
+            <li><a href="https://www.panacare.com.mx/#top" class="smoothScroll"><span>Inicio</span></a></li>
+            <li><a href="https://www.panacare.com.mx/#about" class="smoothScroll"><span>Acerca de nosotros</span></a></li>
+            <li><a href="https://www.panacare.com.mx/#gallery" class="smoothScroll"><span>Servicios</span></a></li>
+            <li><a href="https://www.panacare.com.mx/#contact" class="smoothScroll"><span>Contacto</span></a></li>
           </ul>
        </div>
 

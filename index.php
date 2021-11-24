@@ -182,19 +182,22 @@ mysqli_close($conexion);
           $nombre = $enfermeras['enfermeras_nombre'];
           $general =  $enfermeras['enfermeras_general'];
           $dispo = $enfermeras['enfermeras_disponibilidad'];
+          $foto = $enfermeras['nombre_imagen'];
           ?>
 
           <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="team-thumb">
               <div class="image-holder">
-                <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
+                <img src="fotos/enfermeras/<?php  echo $foto ?>" class="img-responsive img-circle" alt="Jack">
               </div>
               <h2 class="heading"><?php echo $nombre ?></h2>
               <div class="row">
-              <p class="description"><?php echo $general ?></p>
+              <p class="description"><?php echo $general ?><br></p>
+              <p>
+                <a class="description">Disponibilidad: <?php echo $dispo ?></a>
+              </p>
             </div>
             <div class="row">
-            <a class="description">Disponibilidad: <?php echo $dispo ?></a>
           </div>
               <div class="cc">
                 <a href="/" align="right" class="description">Leer mas</a>
@@ -245,7 +248,7 @@ mysqli_close($conexion);
             <figcaption>
               <h2>Renta de equipo hospitalario</h2>
               <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
-              <a href="#">Leer mas</a>
+              <a href="renta_de_equipo_hospitalario.php">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -256,7 +259,7 @@ mysqli_close($conexion);
             <figcaption>
               <h2>Asesoramiento</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-              <a href="#">Leer mas</a>
+              <a href="asesorias_en_el_cuidado_de_tu_familiar.php">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -267,7 +270,7 @@ mysqli_close($conexion);
 						<figcaption>
               <h2>Venta de insumos médicos</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-              <a href="#">Detalles</a>
+              <a href="venta_de_insumos.php">Detalles</a>
             </figcaption>
           </figure>
         </li>

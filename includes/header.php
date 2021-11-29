@@ -12,16 +12,7 @@
 	<meta name="keywords" content="panacare,enfermeria,cuidados,equipo medico,equipamiento hospitalario,camillas,enfermería,enfermeras"/>
 	<link rel="canonical" href="https://www.panacare.com.mx/" />
 	<title>PANACARE</title>
-<!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
 
-Zoom Slider
-https://vegas.jaysalvat.com/
-
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">

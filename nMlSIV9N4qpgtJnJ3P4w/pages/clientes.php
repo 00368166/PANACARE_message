@@ -80,7 +80,7 @@
             <div class="card-footer">
               <div class="text-right">
                 <?php if ($_SESSION['rol'] == 1){ ?>
-                  <form action="eliminar_clientes.php?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
+                  <form action="eliminar_clientes?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
                     <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar</a></i> </button>
                   </form>
                 <?php   } ?>

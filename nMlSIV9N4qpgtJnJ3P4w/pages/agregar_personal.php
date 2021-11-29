@@ -1,8 +1,7 @@
 <?php
 include_once "../includes/navbar.php";
 include "../sesion.php";
-include_once "../includes/navbar.php";
-include "../sesion.php";
+if(isset($_REQUEST['enviar'])){
 if (!empty($_POST)) {
   if (empty($_POST['nombre']) || empty($_POST['telefono']) || empty($_POST['disponibilidad']) || empty($_POST['descrip'])) {
     $alert = '<div class="alert alert-warning alert-dismissible">
@@ -86,6 +85,7 @@ else{
     <h5>Recordatorio</h5>
     Todos los campos son necesarios ampos necesarios.
   </div>';
+}
 }
 ?>
   <!-- Google Font: Source Sans Pro -->

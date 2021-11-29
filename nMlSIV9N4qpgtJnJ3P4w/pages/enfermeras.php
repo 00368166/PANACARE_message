@@ -81,10 +81,10 @@
             <div class="card-footer">
               <div class="text-right">
                 <?php if ($_SESSION['rol'] == 1){ ?>
-                  <form action="eliminar_enfermeras.php?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
+                  <form action="eliminar_enfermeras?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
                     <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar</a></i> </button>
                   </form>
-                  <form action="editar_personal.php?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
+                  <form action="editar_personal?id=<?php echo $id;?>" method="post" class="confirmar d-inline">
                     <button class="btn btn-sm btn-primary" type="submit"><i class='fas fa-user'> <a>Editar perfil</a></i> </button>
                   </form>
                 <?php   } ?>

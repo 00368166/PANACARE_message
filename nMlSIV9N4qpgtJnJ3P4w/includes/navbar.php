@@ -86,7 +86,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 			<nav class="mt-2">
 				<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 			<li class="nav-item">
-				<a href="./messages.php" class="nav-link">
+				<a href="./messages" class="nav-link">
 					<i class="nav-icon fas fa-envelope"></i>
 					<p>
 						Mensajes
@@ -101,7 +101,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 	<nav class="mt-2">
 		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 	<li class="nav-item">
-		<a href="./enfermeras.php" class="nav-link">
+		<a href="./enfermeras" class="nav-link">
 			<i class="nav-icon fas fa-user-nurse"></i>
 			<p>
 				Enfermeras
@@ -116,7 +116,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 	<nav class="mt-2">
 		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 	<li class="nav-item">
-		<a href="./agregar_personal.php" class="nav-link">
+		<a href="./agregar_personal" class="nav-link">
 			<i class="nav-icon fas  fa-plus-square"></i>
 			<p>
 				Agregar Personal
@@ -129,7 +129,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 	<nav class="mt-2">
 		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 	<li class="nav-item">
-		<a href="./clientes.php" class="nav-link">
+		<a href="./clientes" class="nav-link">
 			<i class="nav-icon fas fa-address-book"></i>
 			<p>
 				Clientes
@@ -142,7 +142,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
 	<nav class="mt-2">
 		<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 	<li class="nav-item">
-		<a href="./agregar_clientes.php" class="nav-link">
+		<a href="./agregar_clientes" class="nav-link">
 			<i class="nav-icon fas  fa-plus-square"></i>
 			<p>
 				Agregar Clientes
@@ -155,7 +155,7 @@ $query = mysqli_query($conexion, "SELECT * FROM message");
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <li class="nav-item">
-            <a href="salir.php" class="nav-link">
+            <a href="salir" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>Cerrar Sesión</p>
             </a>

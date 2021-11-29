@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+#RewriteRule ^([a-z]+)/?$ $1.php [NC]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
+#RewriteRule ^([a-z]+)/?$ $1.html [NC]
+
+</IfModule>
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^panacare\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.panacare\.com\.mx$
+RewriteRule ^/?$ "https\:\/\/www\.panacare\.com\.mx\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^panacare\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.panacare\.com\.mx$
+RewriteRule ^cpanel$ "https\:\/\/www\.panacare\.com\.mx\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^/?$ "https\:\/\/www\.panacare\.com\.mx\/" [R=301,L]

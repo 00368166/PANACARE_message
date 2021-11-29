@@ -237,7 +237,7 @@ mysqli_close($conexion);
             <figcaption>
               <h2>Servicios de enfermería</h2>
               <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
-              <a href="servicios_de_enfermeria.php">Leer mas</a>
+              <a href="servicios_de_enfermeria">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -248,7 +248,7 @@ mysqli_close($conexion);
             <figcaption>
               <h2>Renta de equipo hospitalario</h2>
               <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
-              <a href="renta_de_equipo_hospitalario.php">Leer mas</a>
+              <a href="rentas_de_equipo_hospitalario">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -259,7 +259,7 @@ mysqli_close($conexion);
             <figcaption>
               <h2>Asesoramiento</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-              <a href="asesorias_en_el_cuidado_de_tu_familiar.php">Leer mas</a>
+              <a href="asesorias_en_el_cuidado_de_tu_familiar">Leer mas</a>
             </figcaption>
           </figure>
         </li>
@@ -270,7 +270,7 @@ mysqli_close($conexion);
 						<figcaption>
               <h2>Venta de insumos médicos</h2>
               <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-              <a href="venta_de_insumos.php">Detalles</a>
+              <a href="venta_de_insumos">Detalles</a>
             </figcaption>
           </figure>
         </li>

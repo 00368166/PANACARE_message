@@ -83,7 +83,7 @@
                 </div>
                 <div class="timeline-footer">
                   <?php if ($_SESSION['rol'] == 1){ ?>
-                    <form action="eliminar_mensaje.php?id=<?php echo $messages['message_id']; ?>" method="post" class="confirmar d-inline">
+                    <form action="eliminar_mensaje?id=<?php echo $messages['message_id']; ?>" method="post" class="confirmar d-inline">
                       <button class="btn btn-danger btn-sm" type="submit"><i class='fas fa-trash-alt'> <a>Eliminar</a></i> </button>
                     </form>
                   <?php   } ?>
@@ -100,8 +100,8 @@
             <!-- END timeline item -->
 
 
-            <!--  <a href="editar_cliente.php?id=<?php //echo $data['idcliente']; ?>" class="btn btn-success"><i class='fas fa-edit'></i></a>
-              <form action="eliminar_cliente.php?id=<?php //echo $data['idcliente']; ?>" method="post" class="confirmar d-inline">
+            <!--  <a href="editar_cliente?id=<?php //echo $data['idcliente']; ?>" class="btn btn-success"><i class='fas fa-edit'></i></a>
+              <form action="eliminar_cliente?id=<?php //echo $data['idcliente']; ?>" method="post" class="confirmar d-inline">
                 <button class="btn btn-danger" type="submit"><i class='fas fa-trash-alt'></i> </button>
               </form>
           </tr>

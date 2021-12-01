@@ -1,7 +1,7 @@
 <?php
 include_once "../includes/navbar.php";
 include "../sesion.php";
-if(isset($_REQUEST['enviar'])){
+if(isset($_REQUEST['submit'])){
 if (!empty($_POST)) {
   if (empty($_POST['nombre']) || empty($_POST['telefono']) || empty($_POST['disponibilidad']) || empty($_POST['descrip'])) {
     $alert = '<div class="alert alert-warning alert-dismissible">

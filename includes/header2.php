@@ -62,9 +62,9 @@
       </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span>Inicio</span></a></li>
-            <li><a href="#about" class="smoothScroll"><span>Acerca de nosotros</span></a></li>
-            <li><a href="#gallery" class="smoothScroll"><span>Servicios</span></a></li>
+            <li><a href="../" class="smoothScroll"><span>Inicio</span></a></li>
+            <li><a href="#about" class="smoothScroll"><span>Acerca del servicios</span></a></li>
+            <li><a href="#gallery" class="smoothScroll"><span>Descripción</span></a></li>
             <li><a href="#contact" class="smoothScroll"><span>Contacto</span></a></li>
           </ul>
        </div>
